@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Projects</title>
+        <link rel="icon" type="image/jpg" href="Michel Palokouna.png">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo"><img id="pic" src="Pictures/Michel Palokouna.png"></a>
+            <nav class="navbar">
+                <a href="index.html" style="--1:1" class="active">Home</a>
+                <a href="about.html" style="--1:2">About</a>
+                <a href="services.html" style="--1:3">Services</a>
+                <!--<a href="skills.html" style="--1:4">Skills</a>-->
+                <a href="certifs.html" style="--1:5">Certifs</a>
+                <a href="projects.html" style="--1:6">Projects</a>
+                <a href="contact.html" style="--1:7">Contact</a>
+            </nav>
+        </header>
+        <section class="certifs">
+            <div class="portfolio" id="project">
+                <div class="main-text" id="project">
+                    <h2 id="text2">Latest <span>Projects</span></h2>
+                    <!--<h1 class="title">Fortinet</h1>-->
+                    <div class="portfolio-content">                        
+                            <div class="row">
+                                <img src="Pictures/Wazuh.jpg">
+                                <div class="layer">
+                                    <h5>HIDS: Host-Based Intrusion Detection System</h5>                                    
+                                    <a href="#"><button class="butonHIDS" id="buton">Learn More</button></a>
+                                </div> 
+                            </div>  
+                            <div class="row">
+                                <img src="Pictures/SNORT.png">
+                                <div class="layer">
+                                    <h5>SNORT</h5>                                    
+                                    <a href="#"><button class="butonSNORT" id="buton">Learn More</button></a>
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <img src="Pictures/Active-Directory.png">
+                                <div class="layer">
+                                    <h5>Microsoft Active Diretory</h5>                                    
+                                    <a href="#"><button class="butonAD" id="buton">Learn More</button></a>
+                                </div> 
+                            </div>                                      
+                    </div>                                    
+                </div>
+            </div>
+        </section>
+        <section class="pop-upHIDS" id="pop-up">
+            <span class="overlay"></span>      
+            <div class="modal-box">
+              <i class="fa-regular fa-circle-check"></i>
+              <h2>HIDS</h2>
+              <h3>HIDS (Host-Based Intrusion Detection System) enhances host security by actively monitoring for and responding to potential intrusions.</h3>   
+              <h2>Advantages</h2>  
+              <div class="objective-list">
+                <li>Strengthen host-based security</li>
+                <li>Gain hands-on experience with HIDS</li>
+                <li>Develop technical expertise to analyze and mitigate threats</li>
+              </div>
+              <a href="contact.html"><button class="send" id="tell">More</button></a> 
+              <div class="buttons" id="buttons">
+              <i id="close-btn" class='bx bx-x bx-flip-horizontal' style='color:#0ef'></i>              
+              </div> 
+            </div>
+        </section>
+        <section class="pop-upSNORT" id="pop-up">
+            <span class="overlay"></span>      
+            <div class="modal-box">
+              <i class="fa-regular fa-circle-check"></i>
+              <h2>SNORT</h2>
+              <h3>SNORT is a powerful network intrusion detection system (NIDS) that improves network security by identifying potential threats in real-time.</h3>   
+              <h2>Advantages</h2>  
+              <div class="objective-list">
+                <li>Enhance network security.</li>
+                <li>Gain proficiency in SNORT configuration.</li>
+                <li>Develop technical skills to analyze network traffic.</li>
+              </div>
+              <a href="contact.html"><button class="send" id="tell">More</button></a> 
+              <div class="buttons" id="buttons">
+              <i id="close-btn" class='bx bx-x bx-flip-horizontal' style='color:#0ef'></i>              
+              </div> 
+            </div>
+        </section>
+        <section class="pop-upAD" id="pop-up">
+            <span class="overlay"></span>      
+            <div class="modal-box">
+              <i class="fa-regular fa-circle-check"></i>
+              <h2>Active Directory</h2>
+              <h3>Active Directory (AD) is Microsoft's directory service that manages authentication, authorization, and resource management in a Windows environment.</h3>   
+              <h2>Advantages</h2>  
+              <div class="objective-list">
+                <li>Improve organization security through identity management.</li>
+                <li>Acquire technical skills for AD administration.</li>
+                <li>Implement security policies to protect resources.</li>
+              </div>
+              <a href="contact.html"><button class="send" id="tell">More</button></a> 
+              <div class="buttons" id="buttons">
+              <i id="close-btn" class='bx bx-x bx-flip-horizontal' style='color:#0ef'></i>              
+              </div> 
+            </div>
+        </section>
+        <script>
+            const popUpHIDS = document.querySelector(".pop-upHIDS");
+            const popUpSNORT = document.querySelector(".pop-upSNORT");
+            const popUpAD = document.querySelector(".pop-upAD");
+            const overlay = document.querySelector(".overlay");
+            const showBtnHIDS = document.querySelector(".butonHIDS");
+            const showBtnSNORT = document.querySelector(".butonSNORT");
+            const showBtnAD = document.querySelector(".butonAD");
+            const closeBtnHIDS = document.querySelector(".pop-upHIDS #close-btn");
+            const closeBtnSNORT = document.querySelector(".pop-upSNORT #close-btn");
+            const closeBtnAD = document.querySelector(".pop-upAD #close-btn");
+        
+            showBtnHIDS.addEventListener("click", () => popUpHIDS.classList.add("active"));
+            showBtnSNORT.addEventListener("click", () => popUpSNORT.classList.add("active"));
+            showBtnAD.addEventListener("click", () => popUpAD.classList.add("active"));
+        
+            closeBtnHIDS.addEventListener("click", () => popUpHIDS.classList.remove("active"));
+            closeBtnSNORT.addEventListener("click", () => popUpSNORT.classList.remove("active"));
+            closeBtnAD.addEventListener("click", () => popUpAD.classList.remove("active"));
+        
+            overlay.addEventListener("click", () => {
+                popUpHIDS.classList.remove("active");
+                popUpSNORT.classList.remove("active");
+                popUpAD.classList.remove("active");
+            });
+        </script>
+        
+        
+        <script src="main.js "></script>
+    </body>
+</html>
